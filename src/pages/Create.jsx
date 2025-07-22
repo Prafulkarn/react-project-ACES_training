@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Form from "./Components/Form"
+import Form from "./Components/Form.jsx"
 import axios from "axios"
 
 
