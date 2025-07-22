@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Form from "./Components/Form.jsx"
 import axios from "axios"
+import Card from "./Components/Card"
 
 
 function CreateBlog(){
