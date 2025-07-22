@@ -4,6 +4,7 @@ import Card from "./Components/Card"
 import Navbar from "./Components/Navbar"
 import { useNavigate, useParams } from "react-router-dom"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 
 
@@ -43,6 +44,9 @@ function Singlepage(){
             <h1>{blog.title}</h1>
             <h1>{blog.subtitle}</h1>
             <h1>{blog.description}</h1>
+             <Link to={'/edit/'+ blog.id}>
+             <button className="bg-blue-500 text-white">Edit me</button>
+             </Link>
             <button onClick={deleteBlog} className="bg-red-500 text-white">Delete me</button>
         </div>
         {/* <Card/>  */}

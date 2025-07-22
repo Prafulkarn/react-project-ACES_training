@@ -1,8 +1,23 @@
-import Form from "./Components/form"
-
+import { useState } from "react"
+import Form from "./Components/Form"
+import axios from "axios"
 
 
 function CreateBlog(){
+    const [title,setTitle]=useState("")
+    const [subtitle,setSubtitle]=useState("")
+    const [description,setDescription]=useState("")
+    const [image,setImage]=useState("")
+    async function sentDataToBackend(e){
+        e.preventDefault()
+        await axios.post("https://687af35babb83744b7ee46ca.mockapi.io/blogs",{
+            title: title,
+            subtitle:subtitle,
+            description: description, //same as mock api keys and in object format
+            image: image
+        })
+        console.log(response)
+    }
     return(
     <Form/>
 

@@ -2,8 +2,10 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import { useParams } from "react-router-dom";
 
 function Edit() {
+  const data=useParams()
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
   const [description, setDescription] = useState("");
@@ -16,11 +18,11 @@ function Edit() {
     const blogData = { title, subtitle, description, image };
 
     try {
-      const response = await axios.post(
-        "https://687af35babb83744b7ee46ca.mockapi.io/blogs",
+      const response = await axios.put(
+        "https://687af35babb83744b7ee46ca.mockapi.io/blogs/"+ data.id,
         blogData
       );
-      if (response.status === 201) {
+      if (response.status === 200) {
         alert("Blog created successfully");
         navigate("/");
       } else {
@@ -74,7 +76,7 @@ function Edit() {
               type="submit"
               className="bg-indigo-500 text-white py-2 rounded hover:bg-indigo-600 transition duration-200"
             >
-              Create Blog
+              Edit Blog
             </button>
           </form>
         </div>
