@@ -7,7 +7,7 @@ import LearningUseState from './pages/Components/LearningUseState'
 // import Form from './pages/Components/Form'
 import Card from './pages/Components/Card'
 import Singlepage from './pages/Singlepage'
-import CreateBlog from './pages/create'
+import CreateBlog from './pages/Create'
 // import Rest from './pages/Components/rest'
 
 
