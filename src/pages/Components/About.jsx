@@ -22,7 +22,7 @@ const About = () => {
     <div className="w-full md:w-1/2">
       <h2 className="text-4xl font-bold mb-4 border-b-4 border-blue-500 inline-block">About Us</h2>
       <p className="mb-4 text-gray-300 leading-relaxed">
-        We are committed to delivering innovative solutions with a focus on quality and customer satisfaction. Our team of experts works tirelessly to bring your ideas to life and help your business grow.
+       We are a passionate team committed to delivering quality products and a smooth online shopping experience. Our goal is to combine reliability, affordability, and modern design to meet the everyday needs of our customers. We believe in transparency, customer satisfaction, and continuous improvement, ensuring that every interaction with our platform feels simple, secure, and enjoyable. As we grow, we remain focused on building long-term trust and providing value through innovation and dedication.
       </p>
       <p className="mb-4 text-gray-300 leading-relaxed">
         Join us on our journey to make a difference in the industry through creativity, dedication, and excellence.
